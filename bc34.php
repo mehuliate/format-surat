@@ -29,67 +29,67 @@ $pdf->AddPage();
 
 //kop
 $pdf->SetFont('Arial','B','10');
-$pdf->Cell(20,10,'BC 3.4',1,0,'C'); 
-$pdf->Cell(0,5,'PEMBERITAHUAN PEMBAWAAN BARANG UNTUK DIBAWA KEMBALI','LTR',2,'C'); 
+$pdf->Cell(20,8,'BC 3.4',1,0,'C'); 
+$pdf->Cell(0,4,'PEMBERITAHUAN PEMBAWAAN BARANG UNTUK DIBAWA KEMBALI','LTR',2,'C'); 
 $pdf->SetFont('Arial','BI','10');
-$pdf->Cell(0,5,'DECLARATION OF RETURNABLE GOODS','LRB',1,'C');
+$pdf->Cell(0,4,'DECLARATION OF RETURNABLE GOODS','LRB',1,'C');
 
 //bawah_kop
 $row_x = $pdf->GetX();
 $row_y = $pdf->GetY();
 $pdf->ln(1);
 $pdf->SetFont('Arial','','8');
-$pdf->Cell(45,4,'Kolom Khusus Bea dan Cukai',0,2,'L'); 
+$pdf->Cell(45,3,'Kolom Khusus Bea dan Cukai',0,2,'L'); 
 $pdf->SetFont('Arial','I','8');
-$pdf->Cell(45,4,'Customs Official Column',0,2,'L');
+$pdf->Cell(45,3,'Customs Official Column',0,2,'L');
 $pdf->ln(1);
 
 $pdf->SetFont('Arial','','8');
-$pdf->Cell(45,4,'Kantor Pabean keberangkatan',0,0,'L'); 
-$pdf->Cell(45,4,$data->kd_kntr_dpt,0,0,'C');
-$pdf->Cell(90,4,$data->nm_kntr_dpt,0,1,'L'); 
+$pdf->Cell(45,3,'Kantor Pabean keberangkatan',0,0,'L'); 
+$pdf->Cell(45,3,$data->kd_kntr_dpt,0,0,'C');
+$pdf->Cell(90,3,$data->nm_kntr_dpt,0,1,'L'); 
 $pdf->SetFont('Arial','I','8');
-$pdf->Cell(45,4,'Customs Office of Departure',0,1,'L');
+$pdf->Cell(45,3,'Customs Office of Departure',0,1,'L');
 $pdf->ln(1);
 
 $pdf->SetFont('Arial','','8');
-$pdf->Cell(45,4,'Kantor Pabean Kedatangan',0,0,'L'); 
-$pdf->Cell(45,4,$data->kd_kntr_arv,0,0,'C');
-$pdf->Cell(90,4,$data->nm_kntr_arv,0,1,'L'); 
+$pdf->Cell(45,3,'Kantor Pabean Kedatangan',0,0,'L'); 
+$pdf->Cell(45,3,$data->kd_kntr_arv,0,0,'C');
+$pdf->Cell(90,3,$data->nm_kntr_arv,0,1,'L'); 
 $pdf->SetFont('Arial','I','8');
-$pdf->Cell(45,4,'Customs Office of Arrival',0,2,'L');
+$pdf->Cell(45,3,'Customs Office of Arrival',0,2,'L');
 $pdf->ln(1);
 
 $pdf->SetFont('Arial','','8');
-$pdf->Cell(45,4,'Nomor dan Tanggal Pendaftaran',0,0,'L');
-$pdf->Cell(45,4,$data->no_dok,0,0,'C');
-$pdf->Cell(90,4,$data->tgl_dok,0,1,'L'); 
+$pdf->Cell(45,3,'Nomor dan Tanggal Pendaftaran',0,0,'L');
+$pdf->Cell(45,3,$data->no_dok,0,0,'C');
+$pdf->Cell(90,3,$data->tgl_dok,0,1,'L'); 
 $pdf->SetFont('Arial','I','8');
-$pdf->Cell(45,4,'Number and Date of Registration',0,2,'L');
+$pdf->Cell(45,3,'Number and Date of Registration',0,2,'L');
 
 $pdf->Rect($row_x, $row_y, 190, 41);
 
 //kolom kosong
 $pdf->setY($pdf->getY()+1);
-$pdf->cell(0,4,'',1,1);
+$pdf->cell(0,3,'',1,1);
 
 //title pengangkut
 $pdf->setY($pdf->getY());
 $pdf->SetFont('Arial','','10');
-$pdf->Cell(0,5,'DATA PENGANGKUT','LR',2,'L');
+$pdf->Cell(0,4,'DATA PENGANGKUT','LR',2,'L');
 $pdf->SetFont('Arial','I','10');
-$pdf->Cell(0,5,'INFORMATION OF CARRIER','LRB',2,'L');
+$pdf->Cell(0,4,'INFORMATION OF CARRIER','LRB',2,'L');
 $row_x = $pdf->GetX();
 $row_y = $pdf->GetY();
 
 //data pengangkut
 $pdf->SetFont('Arial','','8');
-$pdf->Cell(10,4,'1.',0,0,'C');
+$pdf->Cell(10,3,'1.',0,0,'C');
 $get_x = $pdf->GetX();
 $get_y = $pdf->GetY();
-$pdf->Cell(53,4,'No. Penerbangan/Pelayanan/Kendaraan',0,2,'L');
+$pdf->Cell(53,3,'No. Penerbangan/Pelayanan/Kendaraan',0,2,'L');
 $pdf->SetFont('Arial','I','8');
-$pdf->Cell(0,4,'Flight/Voyage/Vehicle Number',0,2,'L');
+$pdf->Cell(0,3,'Flight/Voyage/Vehicle Number',0,2,'L');
 $max_y = $pdf->GetY();
 
 $pdf->SetXY($get_x+53, $get_y);
