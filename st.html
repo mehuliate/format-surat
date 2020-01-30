@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form ST</title>
+    <style type="text/css">
+        .naskah-dinas {
+            font-family: "Arial", sans-serif;
+            font-size: 11pt;
+            font-weight: normal;
+            color: black;
+            width: 180mm;
+            line-height: 13pt;
+        }
+
+        .naskah-dinas p {
+            margin: 0;
+        }
+
+        .naskah-dinas .row {
+            clear: both;
+        }
+
+        .naskah-dinas .col {
+            float: left;
+        }
+
+        .naskah-dinas .col-25 {
+            width: 25mm;
+        }
+
+        .naskah-dinas .center {
+            text-align: center;
+        }
+
+        .naskah-dinas .kop-surat .logo-instansi {
+            width: 30mm;
+        }
+
+        .naskah-dinas .kop-surat .logo-instansi img {
+            width: 25mm;
+        }
+
+        .naskah-dinas .kop-surat .deskripsi-instansi {
+            width: 150mm;
+        }
+
+        .naskah-dinas .kop-surat .nama-instansi {
+            font-weight: bold;
+            font-size: 13pt;
+            padding-bottom: 7pt;
+        }
+
+        .naskah-dinas .kop-surat .alamat-instansi {
+            font-size: 7pt;
+            line-height: 7pt;
+            padding-bottom: 3pt;
+        }
+
+        .naskah-dinas .content .judul {
+            padding-top: 10pt;
+        }
+
+        .naskah-dinas .content .text {
+            font-size: 11pt;
+            text-align: justify;
+            text-indent: 35pt;
+        }
+
+        .naskah-dinas .content .waktu-tempat .text-tempat {
+            word-break: break-word;
+            width: 150mm;
+        }
+
+        .naskah-dinas .daftar-pegawai table {
+            width: 180mm;
+            border-collapse: collapse;
+        }
+
+        .naskah-dinas .daftar-pegawai table .row-name {
+            width: 25mm;
+        }
+
+        .naskah-dinas .daftar-pegawai table .colon {
+            margin-right: 2pt;
+        }
+
+        .naskah-dinas .daftar-pegawai table .row-text1 {
+            width: 75mm;
+        }
+
+        .naskah-dinas .ttd {
+            padding-left: 100mm;
+        }
+
+        .naskah-dinas .ttd .plh {
+            position: absolute;
+            left: 94mm;
+        }
+
+        .naskah-dinas .lampiran {
+            page-break-before: always;
+            margin-top: 50px;
+        }
+
+        .naskah-dinas .lampiran .header-lampiran {
+            padding-left: 100mm;
+            font-size: 9pt;
+        }
+
+        .naskah-dinas .lampiran .header-lampiran .head {
+            font-size: 11pt;
+        }
+
+        .naskah-dinas .header-lampiran-label {
+            width: 15mm;
+            float: left;
+        }
+
+        .naskah-dinas .daftar-pegawai table>tr>th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .naskah-dinas .lampiran .daftar-pegawai table>thead>tr>th,
+        .naskah-dinas .lampiran .daftar-pegawai table>tbody>tr>td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="naskah-dinas">
+        <div class="hal-depan">
+            <div class="kop-surat" style="clear: both">
+                <div class="row">
+                    <div class="logo-instansi col center">
+                        <img src="http://192.168.146.248/semesta/assets/images/my_image/logo-kemenkeu.png">
+                    </div>
+                    <div class="deskripsi-instansi col center">
+                        <div class="nama-instansi">
+                            <p>KEMENTERIAN KEUANGAN REPUBLIK INDONESIA</p>
+                            <p style="font-size: 11pt">DIREKTORAT JENDERAL BEA DAN CUKAI</p>
+                            <p>KANTOR PELAYANAN UTAMA BEA DAN CUKAI</p>
+                            <p>TIPE C SOEKARNO HATTA</p>
+                        </div>
+                        <div class="alamat-instansi">
+                            <p>DAERAH GUDANG BANDARA SOEKARNO HATTA KOTAK POS-1023, TANGERANG 19111</p>
+                            <p>TELEPON 1500225; FAKSIMILI 5502105; SITUS: www.bcsoekarnohatta.beacukai.go.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="border-bottom: 1.5pt solid"></div>
+            </div>
+            <div class="content row">
+                <div class="judul center">
+                    <p>SURAT TUGAS</p>
+                    <p>ST-790/KPU.03/BG.01/2019</p>
+                </div>
+                <br>
+                <div class="text">
+                    <p>Dalam rangka melaksanakan tugas melaksanakan pemeriksaan barang TNI Konga dan Milstaff Seceast
+                        UNIFIL TA 2018 dan TA 2019, dengan ini kami menugasi:</p>
+                </div>
+                <br>
+
+                <!-- START Daftar Pegawai -->
+                <div class="daftar-pegawai">
+                    <table>
+                        <tr>
+                            <td class="row-name col col-25">
+                                <p>nama / NIP</p>
+                            </td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">
+                                <div class="row-text1 col">Ashadi Maulid Harahap</div>
+                                <div class="row-text2 col">199209092013101001</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row-name col col-25">pangkat / gol</td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">
+                                <div class="row-text1 col">Pengatur Muda Tk. I</div>
+                                <div class="row-text2 col">II.b</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row-name col col-25">jabatan</td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">Pelaksana Pemeriksa</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <tr>
+                            <td class="row-name col col-25">
+                                <p>nama / NIP</p>
+                            </td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">
+                                <div class="row-text1 col">Muhammad Arif Nugraha</div>
+                                <div class="row-text2 col">199411102015021003</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row-name col col-25">pangkat / gol</td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">
+                                <div class="row-text1 col">Pengatur Muda Tk. I</div>
+                                <div class="row-text2 col">II.b</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row-name col col-25">jabatan</td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">Pelaksana Pemeriksa</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                <!-- END Daftar Pegawai -->
+
+                <div>
+                    <p>Untuk melaksanakan tugas tersebut pada :</p>
+                </div>
+                <br>
+
+                <div class="waktu-tempat">
+                    <table>
+                        <tr>
+                            <td class="row-name col col-25">
+                                <p>hari / tanggal</p>
+                            </td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">Jumat / 29 November 2019</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name col col-25">waktu</td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col">09:00 WIB s.d. selesai</td>
+                        </tr>
+                        <tr>
+                            <td class="row-name col col-25">tempat</td>
+                            <td class="colon col">:</td>
+                            <td class="row-text col text-tempat">Mako PMPP TNI Sentul, Bogor</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                <div class="text">
+                    <p>Segala biaya yang timbul sebagai akibat dilaksanakannya surat tugas ini dibebankan pada DIPA KPU
+                        BC Soetta TA 2019</p>
+                    <br>
+                    <p>Surat tugas ini disusun untuk dilaksanakan dan setelah selesai dilaksanakan, Pejabat/Pegawai
+                        segera menyampaikan laporan. Kepada instansi terkait, kami mohon bantuan demi kelancaran
+                        pelaksanaan tugas tersebut.</p>
+                </div>
+                <br><br><br>
+                <div class="ttd">
+                    <p>Ditetapkan di Tangerang</p>
+                    <p>Pada tanggal 29 November 2019</p>
+                    <p>KEPALA BAGIAN UMUM</p>
+                    <br><br><br><br>
+                    <p>YUDI HENDRAWAN</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

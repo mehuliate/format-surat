@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BPJ</title>
+    <style>
+        .surat{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .surat-item {
+            border: 1px solid black;
+        }
+
+        .body {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .jns-jaminan {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .jns-dok{
+            display:grid;
+            grid-template-columns: auto auto;
+        }
+
+        .jns-dok-item:first-of-type {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .tab{
+            width: 200px;
+        }
+
+        .tab:after{
+            content: ":";
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="surat">
+
+        <div class="surat-item">
+            <p>KANTOR PABEAN</p>
+            <p>KPU BEACUKAI SOEKARNO HATTA</p>
+        </div>
+        <div class="surat-item">
+            <p>BUKTI PENERIMAAN JAMINAN</p>
+            <p>Nomor : 000093/BPJ/2D/SH/2019</p>
+        </div>
+        <div class="surat-item">
+            <p>LEMBAR KE-1 UNTUK PENGELUARAN BARANG</p>
+        </div>
+        <div class="surat-item body">
+            <div>
+                <ul type='1'>
+                    <li><p class="tab">NAMA</p> <p class="nilai">asdasdasd</p></li>
+                    <li><p class="tab">NOMOR NPWP/PASPOR</p></li>
+                    <li><p class="tab">ALAMAT</p></li>
+                    <li>
+                        <div class="jns-jaminan">
+                            <div class="jns-jaminan-item"><p>JENIS JAMINAN</p></div>
+                            <div class="jns-jaminan-item">
+                                <input type="checkbox" name="vehicle1" value="Bike">TUNAI
+                            </div>
+                            <div class="jns-jaminan-item">
+                                <input type="checkbox" name="vehicle1" value="Bike">BANK
+                            </div>
+                            <div class="jns-jaminan-item"></div>
+                            <div class="jns-jaminan-item">
+                                <input type="checkbox" name="vehicle1" value="Bike">CUSTOMS BOND
+                            </div>
+                            <div class="jns-jaminan-item">
+                                <input type="checkbox" name="vehicle1" value="Bike">LAIN-LAIN
+                            </div>
+                            <div class="jns-jaminan-item"></div>
+                            <div class="jns-jaminan-item">NOMOR : 0000093</div>
+                            <div class="jns-jaminan-item">TANGGAL : 14 AGUSTUS 2019</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="tab">PENJAMIN</p>
+                    </li>
+                    <li>
+                        <div class="jns-dok">
+                            <div class="jns-dok-item">PIB/ PIBT/ SPKPBM/ SPPDA/ NOTA PEMBETULAN *)</div>
+                            <div class="jns-dok-item">NOMOR</div>
+                            <div class="jns-dok-item">TANGGAL</div>
+    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jml-jaminan">
+                            <div><p class="tab">JUMLAH JAMINAN</p></div>
+                            <div>(# DUA JUTA TUJUH RATUS RIBU Indonesia Rupiah #)</div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div>
+                <p>CATATAN BENDAHARAWAN PENERIMA :</p>
+            </div>
+            <div class="tanda-tangan">
+                <p>CENGKARENG, 14 AGUSTUS 2019</p>
+                <P>BENDAHARAWAN PENERIMA</P>
+                <br>
+                <br>
+                <br>
+                <p>A. ZULKARNAIN IMANUDIN</p>
+                <P>NIP 198209222003121001</P>
+            </div>
+        </div>
+        <div class="surat-item footer">
+            <p>CATATAN : *) = coret yang tidak perlu</p>
+        </div>
+    </div>
+</body>
+</html>

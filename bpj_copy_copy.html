@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BPJ</title>
+    <style>
+        .surat {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        
+        .surat-item {
+            border: 1px solid black;
+        }
+        
+        .body {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        
+        .satu {
+            display: grid;
+            grid-template-columns: 20px 200px 20px auto;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        
+        .satu-item {
+            border: 1px solid black;
+        }
+        
+        .jenis-jaminan {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+        .jns-dok {
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="surat">
+
+        <div class="surat-item">
+            <p>KANTOR PABEAN</p>
+            <p>KPU BEACUKAI SOEKARNO HATTA</p>
+        </div>
+        <div class="surat-item">
+            <p>BUKTI PENERIMAAN JAMINAN</p>
+            <p>Nomor : 000093/BPJ/2D/SH/2019</p>
+        </div>
+        <div class="surat-item">
+            <p>LEMBAR KE-1 UNTUK PENGELUARAN BARANG</p>
+        </div>
+        <div class="surat-item body">
+            <div class="satu">
+                <div class="satu-item">
+                    <p>1.</p>
+                </div>
+                <div class="satu-item">
+                    <p>NAMA</p>
+                </div>
+                <div class="satu-item">
+                    <p>:</p>
+                </div>
+                <div class="satu-item">
+                    <p>HOR FOOK WAI (MALAYSIA)</p>
+                </div>
+                <div class="satu-item">
+                    <p>2.</p>
+                </div>
+                <div class="satu-item">
+                    <p>NOMOR NPWP/ PASPOR</p>
+                </div>
+                <div class="satu-item">
+                    <p>:</p>
+                </div>
+                <div class="satu-item">
+                    <p>A40499604 / </p>
+                </div>
+                <div class="satu-item">
+                    <p>3.</p>
+                </div>
+                <div class="satu-item">
+                    <p>ALAMAT</p>
+                </div>
+                <div class="satu-item">
+                    <p>:</p>
+                </div>
+                <div class="satu-item">
+                    <p>JAKARTA</p>
+                </div>
+                <div class="satu-item">
+                    <p>4.</p>
+                </div>
+                <div class="satu-item">
+                    <p>JENIS JAMINAN</p>
+                </div>
+                <div class="satu-item jenis-jaminan">
+                    <div>
+                        <input type="checkbox" name="" id=""> TUNAI
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id=""> BANK
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id=""> CUSTOMS BOND
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id=""> LAIN-LAIN
+                    </div>
+                    <div>
+                        <P>NOMOR :</P>
+                    </div>
+                    <div>
+                        <p>TANGGAL :</p>
+                    </div>
+                </div>
+                <div class="satu-item">
+                    <p>5.</p>
+                </div>
+                <div class="satu-item">
+                    <p>PENJAMIN</p>
+                </div>
+                <div class="satu-item">
+                    <p>:</p>
+                </div>
+                <div class="satu-item">
+                    <p>JAKARTA</p>
+                </div>
+                <div class="satu-item">
+                    <p>6.</p>
+                </div>
+                <div class="satu-item jns-dok">
+                    <p>PIB/ PIBT/ SPKPBM/ SPPDA/ NOTA PEMBETULAN *)</p>
+                </div>
+                <div class="satu-item">
+                    <p></p>
+                </div>
+                <div class="satu-item jns-dok">
+                    <p>NOMOR : 4564564655456456645 TANGGAL : 12-99-9999</p>
+                </div>
+
+                <div class="satu-item">
+                    <p>7.</p>
+                </div>
+                <div class="satu-item">
+                    <p>JUMLAH JAMINAN</p>
+                </div>
+                <div class="satu-item">
+                    <p>:</p>
+                </div>
+                <div class="satu-item">
+                    <p>JAKARTA</p>
+                </div>
+                <div class="satu-item">
+                    <p></p>
+                </div>
+                <div class="satu-item jns-dok">
+                    <p>JUMLAH JAMINAN</p>
+                </div>
+
+            </div>
+            <div>
+                <p>CATATAN BENDAHARAWAN PENERIMA :</p>
+            </div>
+            <div class="tanda-tangan">
+                <p>CENGKARENG, 14 AGUSTUS 2019</p>
+                <P>BENDAHARAWAN PENERIMA</P>
+                <br>
+                <br>
+                <br>
+                <p>A. ZULKARNAIN IMANUDIN</p>
+                <P>NIP 198209222003121001</P>
+            </div>
+        </div>
+        <div class="surat-item footer">
+            <p>CATATAN : *) = coret yang tidak perlu</p>
+        </div>
+    </div>
+</body>
+
+</html>
